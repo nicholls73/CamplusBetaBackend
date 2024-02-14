@@ -1,0 +1,6 @@
+@CamplusBetaBackend_HostAddress = http://localhost:5072
+
+GET {{CamplusBetaBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
