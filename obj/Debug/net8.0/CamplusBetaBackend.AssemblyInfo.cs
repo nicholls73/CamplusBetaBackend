@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CamplusBetaBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0fbd86eebe07b7795a8ddaa6f717237224f460d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CamplusBetaBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CamplusBetaBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

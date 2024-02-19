@@ -11,6 +11,7 @@ using Amazon;
 using Amazon.S3;
 using Amazon.Runtime;
 using System.Net;
+using CamplusBetaBackend.Services.Implentations;
 
 namespace CamplusBetaBackend.Controllers {
     [ApiController]
@@ -37,7 +38,7 @@ namespace CamplusBetaBackend.Controllers {
             if (events == null) {
                 return NotFound();
             }
-            return events;
+            return Ok(events);
         }
 
         [HttpPost("AddNewEvent")]
@@ -51,34 +52,61 @@ namespace CamplusBetaBackend.Controllers {
             }
         }
 
+        [HttpDelete("DeleteEvent")]
+        public async Task<ActionResult> DeleteEvent(Guid id) {
+            Event? response = await _eventService.DeleteEventFromDB(id);
+
+            if (response == null) {
+                return NotFound("Event not found.");
+            }
+            return Ok(response);
+        }
+
         [HttpPost("UploadEventImage")]
         public async Task<ActionResult> UploadEventImage(IFormFile image) {
             if (image == null || image.Length == 0) {
                 return StatusCode(500, "Internal server error: Image file is empty");
             }
 
-            string imageName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+            string fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
 
             using (var stream = new MemoryStream()) {
                 await image.CopyToAsync(stream);
 
                 PutObjectRequest putObjectRequest = new PutObjectRequest {
                     BucketName = BucketName,
-                    Key = imageName,
+                    Key = fileName,
                     InputStream = stream,
                     ContentType = image.ContentType,
-                    //CannedACL = S3CannedACL.PublicRead
                 };
 
                 var response = await _s3Client.PutObjectAsync(putObjectRequest);
 
                 if (response.HttpStatusCode == HttpStatusCode.OK) {
-                    var imageUrl = $"https://{BucketName}.s3.amazonaws.com/{imageName}";
+                    var imageUrl = $"https://{BucketName}.s3.amazonaws.com/{fileName}";
                     return Ok(imageUrl);
                 }
                 else {
                     return BadRequest("Internal server error: Error uploading image");
                 }
+            }
+        }
+
+        [HttpDelete("DeleteEventImage")]
+        public async Task<ActionResult> DeleteEventImage(string imageLink) {
+            Uri uri = new Uri(imageLink);
+            string fileName = Path.GetFileName(uri.AbsolutePath);
+
+            DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest {
+                BucketName = BucketName,
+                Key = fileName
+            };
+
+            try {
+                var response = await _s3Client.DeleteObjectAsync(deleteObjectRequest);
+                return Ok();
+            } catch (AmazonS3Exception e) {
+                return BadRequest($"Internal server error: {e}");
             }
         }
     }

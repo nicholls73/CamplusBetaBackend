@@ -1,0 +1,242 @@
+[
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.ClubController",
+    "Method": "AddNewClub",
+    "RelativePath": "api/Club/AddNewClub",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "club",
+        "Type": "CamplusBetaBackend.Models.Club",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.ClubController",
+    "Method": "DeleteClub",
+    "RelativePath": "api/Club/DeleteClub",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.ClubController",
+    "Method": "GetClub",
+    "RelativePath": "api/Club/GetClub/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CamplusBetaBackend.Models.Club",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.ClubController",
+    "Method": "GetClubs",
+    "RelativePath": "api/Club/GetClubs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CamplusBetaBackend.Models.Club[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.EventController",
+    "Method": "AddNewEvent",
+    "RelativePath": "api/Event/AddNewEvent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "event",
+        "Type": "CamplusBetaBackend.Models.Event",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.EventController",
+    "Method": "DeleteEvent",
+    "RelativePath": "api/Event/DeleteEvent",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.EventController",
+    "Method": "DeleteEventImage",
+    "RelativePath": "api/Event/DeleteEventImage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageLink",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.EventController",
+    "Method": "GetEvents",
+    "RelativePath": "api/Event/GetEvents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CamplusBetaBackend.Models.Event[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.EventController",
+    "Method": "UploadEventImage",
+    "RelativePath": "api/Event/UploadEventImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.HostController",
+    "Method": "AddNewHost",
+    "RelativePath": "api/Host/AddNewHost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "host",
+        "Type": "CamplusBetaBackend.Models.Host",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.HostController",
+    "Method": "DeleteHost",
+    "RelativePath": "api/Host/DeleteHost",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.HostController",
+    "Method": "GetHost",
+    "RelativePath": "api/Host/GetHost/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CamplusBetaBackend.Models.Host",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.HostController",
+    "Method": "GetHosts",
+    "RelativePath": "api/Host/GetHosts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CamplusBetaBackend.Models.Host[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

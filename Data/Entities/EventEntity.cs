@@ -13,6 +13,6 @@ namespace CamplusBetaBackend.Data.Entities {
         public Guid? host_id { get; set; }
         public Guid? club_id { get; set; }
         public required string description { get; set; }
-        public required Guid created_by { get; set; }
+        //public required Guid created_by { get; set; }
     }
 }

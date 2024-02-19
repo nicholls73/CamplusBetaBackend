@@ -27,6 +27,17 @@ namespace CamplusBetaBackend.Services.Implentations {
             await _context.SaveChangesAsync();
         }
 
+        public async Task<Event?> DeleteEventFromDB(Guid id) {
+            EventEntity? eventEntity = await _context.events.FindAsync(id);
+            
+            if (eventEntity == null) {
+                return null;
+            }
+            _context.events.Remove(eventEntity);
+            await _context.SaveChangesAsync();
+            return(EntityToEvent(eventEntity));
+        }
+
         private static Event EntityToEvent(EventEntity eventEntity) {
             return new Event {
                 EventId = eventEntity.event_id,
@@ -39,7 +50,6 @@ namespace CamplusBetaBackend.Services.Implentations {
                 HostId = eventEntity.host_id,
                 ClubId = eventEntity.club_id,
                 Description = eventEntity.description,
-                CreatedBy = eventEntity.created_by
             };
         }
 
@@ -55,7 +65,6 @@ namespace CamplusBetaBackend.Services.Implentations {
                 host_id = event_.HostId,
                 club_id = event_.ClubId,
                 description = event_.Description,
-                created_by = event_.CreatedBy
             };
         }
     }

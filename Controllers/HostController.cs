@@ -1,6 +1,7 @@
 ﻿using CamplusBetaBackend.Models;
 using Microsoft.AspNetCore.Mvc;
 using CamplusBetaBackend.Services.Interfaces;
+using CamplusBetaBackend.Services.Implentations;
 
 namespace CamplusBetaBackend.Controllers {
     [ApiController]
@@ -14,6 +15,16 @@ namespace CamplusBetaBackend.Controllers {
             _hostService = hostService;
         }
 
+        [HttpGet("GetHosts")]
+        public async Task<ActionResult<Models.Host[]>> GetHosts() {
+            Models.Host[]? hosts = await _hostService.GetHostsFromDB();
+
+            if (hosts == null) {
+                return NotFound();
+            }
+            return Ok(hosts);
+        }
+
         [HttpGet("GetHost/{id}")]
         public async Task<ActionResult<Models.Host>> GetHost(Guid id) {
             Models.Host? host = await _hostService.GetHostFromDB(id);
@@ -21,7 +32,7 @@ namespace CamplusBetaBackend.Controllers {
             if (host == null) {
                 return NotFound();
             }
-            return host;
+            return Ok(host);
         }
 
         [HttpPost("AddNewHost")]
@@ -34,6 +45,16 @@ namespace CamplusBetaBackend.Controllers {
             catch (Exception e) {
                 return StatusCode(500, "Internal server error: " + e.Message);
             }
-        }   
+        }
+
+        [HttpDelete("DeleteHost")]
+        public async Task<ActionResult> DeleteHost(Guid id) {
+            Models.Host? response = await _hostService.DeleteHostFromDB(id);
+
+            if (response == null) {
+                return NotFound("Host not found.");
+            }
+            return Ok(response);
+        }
     }
 }

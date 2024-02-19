@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jamni\\OneDrive\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj": {}
+    "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jamni\\OneDrive\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj": {
+    "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jamni\\OneDrive\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj",
+        "projectUniqueName": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj",
         "projectName": "CamplusBetaBackend",
-        "projectPath": "C:\\Users\\jamni\\OneDrive\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj",
-        "packagesPath": "C:\\Users\\jamni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jamni\\OneDrive\\Desktop\\.NET\\CamplusBetaBackend\\obj\\",
+        "projectPath": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\CamplusBetaBackend.csproj",
+        "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jamni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,7 +36,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,6 +10,6 @@
         public Guid? HostId { get; set; }
         public Guid? ClubId { get; set; }
         public required string Description { get; set; }
-        public required Guid CreatedBy { get; set; }
+        //public required Guid? CreatedBy { get; set; }
     }
 }
