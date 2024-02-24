@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|c:\\users\\james\\desktop\\.net\\camplusbetabackend\\controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37178366-65E6-4A94-AFBD-F06EE43FAE1B}|CamplusBetaBackend.csproj|solutionrelative:controllers\\clubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +47,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-24T05:11:34.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-24T05:11:08.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-24T05:06:28.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "EventController.cs",
               "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Controllers\\EventController.cs",
               "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Controllers\\EventController.cs",
               "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAlwEEAAAAoAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAqwB4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-19T12:13:34.027Z",
+              "WhenOpened": "2024-02-23T19:35:09.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClubController.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Controllers\\ClubController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClubController.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Controllers\\ClubController.cs",
+              "RelativeToolTip": "Controllers\\ClubController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-23T19:35:07.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\James\\Desktop\\.NET\\CamplusBetaBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwCgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-23T19:32:25.35Z",
               "EditorCaption": ""
             }
           ]

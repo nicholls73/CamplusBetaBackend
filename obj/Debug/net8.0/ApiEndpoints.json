@@ -8,9 +8,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "club",
-        "Type": "CamplusBetaBackend.Models.Club",
+        "Name": "clubDTO",
+        "Type": "CamplusBetaBackend.DTOs.ClubDTO",
         "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -26,6 +31,11 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -43,6 +53,11 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -64,7 +79,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "CamplusBetaBackend.Models.Club[]",
@@ -86,9 +107,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "event",
-        "Type": "CamplusBetaBackend.Models.Event",
+        "Name": "eventDTO",
+        "Type": "CamplusBetaBackend.DTOs.EventDTO",
         "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -104,6 +130,11 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -121,6 +152,11 @@
         "Name": "imageLink",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -132,7 +168,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "CamplusBetaBackend.Models.Event[]",
@@ -157,6 +199,11 @@
         "Name": "image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -170,9 +217,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "host",
-        "Type": "CamplusBetaBackend.Models.Host",
+        "Name": "hostDTO",
+        "Type": "CamplusBetaBackend.DTOs.HostDTO",
         "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -188,6 +240,11 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -205,6 +262,11 @@
         "Name": "id",
         "Type": "System.Guid",
         "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -226,7 +288,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "CamplusBetaBackend.Models.Host[]",
@@ -238,5 +306,79 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.UserController",
+    "Method": "CheckAuth",
+    "RelativePath": "api/User/CheckAuth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDetails",
+        "Type": "CamplusBetaBackend.Models.LoginDetails",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CamplusBetaBackend.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDetails",
+        "Type": "CamplusBetaBackend.Models.LoginDetails",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-API-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
